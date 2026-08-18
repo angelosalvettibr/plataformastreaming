@@ -50,7 +50,7 @@ nav ul{display:flex;gap:26px;list-style:none;font-size:14px;font-weight:500;colo
 nav ul a:hover{color:var(--cobalt)}
 .lang{font-family:var(--m);font-size:12px;letter-spacing:.14em;color:var(--mute);margin-right:16px}.lang:hover{color:var(--cobalt)}
 @media(max-width:860px){.lang{margin-left:auto}}
-@media(max-width:860px){nav ul{display:none}}
+@media(max-width:860px){nav ul{display:none}.logo small{display:none}nav .btn{padding:10px 14px;font-size:13px}nav .wrap{height:60px}}
 
 /* HERO */
 .hero{padding:clamp(56px,7vw,96px) 0 0;position:relative;overflow:hidden}
@@ -207,20 +207,20 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
     <line x1="700" y1="0" x2="0" y2="900"/><line x1="700" y1="0" x2="1400" y2="900"/><line x1="700" y1="0" x2="350" y2="900"/><line x1="700" y1="0" x2="1050" y2="900"/><line x1="700" y1="0" x2="700" y2="900"/>
   </svg>
   <div class="wrap">
-    <div class="eb">Manifesto Vertice</div>
+    <div class="eb">Plataformas de conteúdo com a sua marca</div>
     <h1>A audiência é sua.<br><span>A plataforma também.</span></h1>
-    <p class="lead">Durante vinte anos, quem tinha audiência entregou tudo ao feed dos outros. A Vertice leva o seu público da rede social para o seu app: gamificado, com a sua marca, com narrativa e tecnologia na mesma frase. Streaming, música ou TV, do simples ao complexo.</p>
+    <p class="lead">A Vertice leva a sua audiência da rede social para o seu próprio app: streaming, música ou TV, com assinatura, moedas, gamificação e inteligência artificial. Você entra com o conteúdo e o público; nós entregamos e operamos a plataforma, do simples ao complexo.</p>
     <div class="acts">
       <a href="#contato" class="btn btn-p">Conversar sobre o seu projeto</a>
       <a href="#modos" class="btn btn-g">Ver modos de operação</a>
     </div>
   </div>
   <div class="shelf" aria-hidden="true">
-    <div class="ph"><div class="scr k1"><video class="vid" autoplay muted loop playsinline preload="metadata"><source src="videos/drama.mp4" type="video/mp4"></video><div class="ov"></div><span class="b">DRAMA+</span><div><span class="tag">Continua em 3s</span><div class="t">O Herdeiro Errado</div><div class="bar"><b></b></div><span class="cta">Desbloquear · 30 moedas</span></div></div></div>
-    <div class="ph"><div class="scr k2"><video class="vid" autoplay muted loop playsinline preload="metadata"><source src="videos/music.mp4" type="video/mp4"></video><div class="ov"></div><span class="b">FLUXO</span><div><span class="tag">Lançamento exclusivo</span><div class="eq"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="t">Set inédito, 24h antes</div><span class="cta">Assinar fã-clube</span></div></div></div>
-    <div class="ph"><div class="scr k5"><video class="vid" autoplay muted loop playsinline preload="metadata"><source src="videos/panel.mp4" type="video/mp4"></video><div class="ov"></div><span class="b">VERTICE</span><div><span class="tag">Painel · hoje</span><div class="t">R$ 48.210 em receita</div><div class="bar"><b style="width:82%"></b></div><span class="cta">3.412 novas assinaturas</span></div></div></div>
-    <div class="ph"><div class="scr k3"><video class="vid" autoplay muted loop playsinline preload="metadata"><source src="videos/tv.mp4" type="video/mp4"></video><div class="ov"></div><span class="b">CANAL</span><div><span class="tag">● Direto · 21:00</span><div class="t">Jornal + Novela + Ver depois</div><div class="bar"><b style="width:40%"></b></div><span class="cta">Assinar · 4,99€/mês</span></div></div></div>
-    <div class="ph"><div class="scr k4"><video class="vid" autoplay muted loop playsinline preload="metadata"><source src="videos/play.mp4" type="video/mp4"></video><div class="ov"></div><span class="b">PLAY</span><div><span class="tag">Continuar assistindo</span><div class="t">Temporada 2 · Ep. 4</div><div class="bar"><b style="width:55%"></b></div><span class="cta">Continuar</span></div></div></div>
+    <div class="ph"><div class="scr k1"><video class="vid" autoplay muted loop playsinline preload="auto" poster="posters/drama.jpg"><source src="videos/drama.mp4" type="video/mp4"></video><div class="ov"></div><span class="b">DRAMA+</span><div><span class="tag">Continua em 3s</span><div class="t">O Herdeiro Errado</div><div class="bar"><b></b></div><span class="cta">Desbloquear · 30 moedas</span></div></div></div>
+    <div class="ph"><div class="scr k2"><video class="vid" autoplay muted loop playsinline preload="auto" poster="posters/music.jpg"><source src="videos/music.mp4" type="video/mp4"></video><div class="ov"></div><span class="b">FLUXO</span><div><span class="tag">Lançamento exclusivo</span><div class="eq"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="t">Set inédito, 24h antes</div><span class="cta">Assinar fã-clube</span></div></div></div>
+    <div class="ph"><div class="scr k5"><video class="vid" autoplay muted loop playsinline preload="auto" poster="posters/panel.jpg"><source src="videos/panel.mp4" type="video/mp4"></video><div class="ov"></div><span class="b">VERTICE</span><div><span class="tag">Painel · hoje</span><div class="t">R$ 48.210 em receita</div><div class="bar"><b style="width:82%"></b></div><span class="cta">3.412 novas assinaturas</span></div></div></div>
+    <div class="ph"><div class="scr k3"><video class="vid" autoplay muted loop playsinline preload="auto" poster="posters/tv.jpg"><source src="videos/tv.mp4" type="video/mp4"></video><div class="ov"></div><span class="b">CANAL</span><div><span class="tag">● Direto · 21:00</span><div class="t">Jornal + Novela + Ver depois</div><div class="bar"><b style="width:40%"></b></div><span class="cta">Assinar · 4,99€/mês</span></div></div></div>
+    <div class="ph"><div class="scr k4"><video class="vid" autoplay muted loop playsinline preload="auto" poster="posters/play.jpg"><source src="videos/play.mp4" type="video/mp4"></video><div class="ov"></div><span class="b">PLAY</span><div><span class="tag">Continuar assistindo</span><div class="t">Temporada 2 · Ep. 4</div><div class="bar"><b style="width:55%"></b></div><span class="cta">Continuar</span></div></div></div>
   </div>
 </header>
 
@@ -228,24 +228,14 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
   <span>Microdramas verticais</span><span>Séries e catálogo</span><span>Música e artistas</span><span>TV linear + on demand</span><span>Cursos e comunidades</span>
 </div></div>
 
-<section class="manifesto">
-  <div class="wrap">
-    <p>As empresas de tecnologia viraram plataformas de conteúdo. Ficaram com a audiência, o algoritmo e a receita. <span>Nunca aprenderam a contar uma história.</span></p>
-    <p>O vertical drama virou o jogo: pela primeira vez, narrativa e produto são a mesma coisa. O gancho é o roteiro e é o paywall. A moeda é a emoção e é a receita. <span>Quem sabe contar história passou a saber construir a máquina.</span></p>
-    <p>A inteligência artificial terminou o serviço. O que exigia mil engenheiros hoje está ao alcance de quem tem um bom roteirista e uma audiência. <span>É a virada de quem sempre soube contar histórias.</span></p>
-    <p>A Vertice existe para essa virada. Da rede social ao seu app. Da atenção emprestada à receita própria. <span>Tecnologia a serviço da narrativa, e não o contrário.</span></p>
-    <div class="sig">Vertice AI Stream · Manifesto</div>
-  </div>
-</section>
-
 <section class="why">
   <div class="wrap">
     <div>
       <div class="eb">Por que a Vertice existe</div>
-      <h2>Vocês construíram a audiência. O feed ficou com ela.</h2>
+      <h2>Quem constrói audiência não devia depender da plataforma dos outros.</h2>
     </div>
     <div>
-      <p>Comprar público do zero custa uma fortuna: os grandes apps de microdrama faturam centenas de milhões e seguem no vermelho pagando anúncio. Já quem tem audiência (grupos de mídia, operadoras, marcas, artistas, produtoras) fica preso a comissões, algoritmos e regras que não controla. A Vertice arma quem já tem público com uma plataforma própria, pronta e rentável.</p>
+      <p>As redes sociais e as grandes plataformas ficaram com a audiência, o algoritmo e a receita de quem produz conteúdo. Ao mesmo tempo, o vertical drama mostrou que narrativa e produto podem ser a mesma coisa: o gancho é o roteiro e é o paywall. E a IA tornou possível, para quem sabe contar histórias, operar a própria máquina. A Vertice junta as duas pontas: tecnologia de plataforma e inteligência de conteúdo, para levar o público da rede social ao seu app, com a sua marca e a sua receita.</p>
       <div class="stat">Mais de 70% das novas plataformas de streaming nascem sobre tecnologia white label. A diferença está em quem opera a monetização.</div>
     </div>
   </div>
@@ -253,7 +243,6 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 
 <section id="quem" class="who">
   <div class="wrap">
-    <div class="mani rv"><small>Manifesto · 1</small>Não é para quem quer comprar audiência. É para quem já tem, e quer parar de alugá-la.</div>
     <div class="eb">Para quem</div>
     <h2>Feito para quem já tem público e quer receita própria.</h2>
     <div class="who-g">
@@ -269,7 +258,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 
 <section id="camadas">
   <div class="wrap">
-    <div class="mani rv"><small>Manifesto · 2</small>Tecnologia sem narrativa é uma casca vazia. Narrativa sem tecnologia é conteúdo para o feed dos outros.</div>
+    <div class="mani rv"><small>Nossa visão</small>Tecnologia sem narrativa é uma casca vazia. Narrativa sem tecnologia é conteúdo para o feed dos outros.</div>
     <div class="eb">A plataforma</div>
     <h2>Um núcleo. Todas as camadas.</h2>
     <p class="lead">Não é um app e mais uma lista de fornecedores. É o produto inteiro, operado por uma equipe só, do vídeo à cobrança.</p>
@@ -287,7 +276,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 <section id="ia" class="ai">
   <div class="wrap">
     <div>
-      <div class="mani rv"><small>Manifesto · 3</small>A IA devolveu a máquina para quem conta a história.</div>
+      <div class="mani rv"><small>Nossa visão</small>A IA devolveu a máquina para quem conta a história.</div>
       <div class="eb">Inteligência artificial</div>
       <h2>O "AI" do nome trabalha em cada tela.</h2>
       <p class="lead">Não é um chatbot colado no app. É a inteligência que decide o que mostrar, em que língua, a quem cobrar e quando trazer de volta.</p>
@@ -318,7 +307,6 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 
 <section id="modos">
   <div class="wrap">
-    <div class="mani rv"><small>Manifesto · 4</small>Do simples ao complexo. Sempre seu: sua marca, seus dados, sua receita.</div>
     <div class="eb">Modos de operação</div>
     <h2>Da operação simples à mais complexa, na mesma base.</h2>
     <p class="lead">Você entra no degrau que faz sentido hoje e sobe sem trocar de plataforma nem de parceiro.</p>
@@ -332,7 +320,6 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 
 <section id="porque" class="edge">
   <div class="wrap">
-    <div class="mani rv"><small>Manifesto · 5</small>Vinte anos dentro das operadoras. Vinte anos contando histórias. Ninguém mais tem os dois.</div>
     <div class="eb">Diferenciais</div>
     <h2>O que a Vertice traz que ninguém traz junto.</h2>
     <div class="eg">
@@ -378,7 +365,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 <section id="contato" class="cta">
   <div class="wrap">
     <div class="eb">Vamos conversar</div>
-    <h2>Saia do feed alugado. Traga a sua audiência para casa.</h2>
+    <h2>Traga a sua audiência para o seu app. A Vertice cuida do resto.</h2>
     <p>Um catálogo, uma audiência, uma ideia ou uma operação inteira: em uma conversa devolvemos escopo, degrau recomendado e caminho de lançamento.</p>
     <a href="mailto:contato@vertice.ai" class="btn btn-p">Marcar uma conversa</a>
   </div>
@@ -392,6 +379,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 </footer>
 
 <script>
+document.querySelectorAll('video.vid').forEach(v=>{v.addEventListener('error',()=>v.remove(),true);const p=v.play();if(p&&p.catch)p.catch(()=>{});});
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 </script>
