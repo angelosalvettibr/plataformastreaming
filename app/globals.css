@@ -1,0 +1,58 @@
+:root {
+  --bg: #FAF5EA;            /* creme quente — luz de Viareggio */
+  --surface: #FFFFFF;
+  --surface2: #F4EDDD;
+  --line: #E7DCC4;
+  --text: #2B2620;
+  --muted: #8A7F6C;
+  --gold: #B8860B;
+  --gold-soft: #F3E4C2;
+  --pos: #2E7D5B;
+  --neg: #C0503A;
+  --shadow: 0 1px 2px rgba(97, 81, 48, .06), 0 8px 24px rgba(97, 81, 48, .07);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: linear-gradient(180deg, #FBF7EE 0%, #F6EFDF 100%);
+  min-height: 100vh;
+  color: var(--text);
+  font-family: 'Archivo', system-ui, sans-serif;
+}
+a { color: var(--gold); text-decoration: none; }
+a:hover { text-decoration: underline; }
+input, textarea, select {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 8px;
+  color: var(--text); font-family: inherit; font-size: 14px; padding: 10px 12px; width: 100%;
+}
+input:focus, textarea:focus, select:focus, button:focus-visible { outline: 2px solid var(--gold); outline-offset: 1px; }
+button.primary {
+  background: var(--gold); color: #fff; border: none; border-radius: 10px;
+  padding: 11px 22px; font-size: 14px; font-weight: 600; cursor: pointer;
+  box-shadow: var(--shadow);
+}
+button.primary:hover { filter: brightness(1.06); }
+button.ghost {
+  background: var(--surface); color: var(--gold); border: 1px solid var(--gold);
+  border-radius: 10px; padding: 8px 16px; font-size: 13px; font-weight: 600; cursor: pointer;
+}
+.card {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
+  padding: 18px; box-shadow: var(--shadow);
+}
+.eyebrow { font-size: 10px; letter-spacing: .22em; color: var(--gold); text-transform: uppercase; font-weight: 700; }
+h1.display { font-family: 'Fraunces', serif; font-weight: 700; font-size: 30px; margin: 6px 0 4px; color: #211C15; }
+.muted { color: var(--muted); }
+.container { max-width: 860px; margin: 0 auto; padding: 28px 18px 60px; }
+.badge {
+  color: #7A5A10; background: var(--gold-soft); font-size: 11px; font-weight: 600;
+  border: 1px solid #E4CE9B; border-radius: 10px; padding: 1px 8px;
+}
+table.data { width: 100%; border-collapse: collapse; font-size: 13px; }
+table.data th {
+  text-align: left; color: var(--muted); font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: .06em;
+  padding: 10px; border-bottom: 2px solid var(--line); background: var(--surface2);
+}
+table.data td { padding: 9px 10px; border-bottom: 1px solid #F0E8D5; }
+table.data tbody tr:hover { background: #FCF8EF; }
+.num { font-variant-numeric: tabular-nums; }

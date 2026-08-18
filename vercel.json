@@ -1,1 +1,1 @@
-{"cleanUrls": true}
+{ "crons": [ { "path": "/api/cerebro?tipo=nota_dia", "schedule": "0 10 * * *" } ] }
