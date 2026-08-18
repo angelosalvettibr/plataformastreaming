@@ -32,6 +32,14 @@ section{padding:clamp(64px,8vw,112px) 0}
 .rv{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}.rv.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
 
+.mani{font-family:var(--d);font-weight:700;font-size:clamp(22px,2.6vw,32px);letter-spacing:-.02em;line-height:1.2;max-width:26ch;margin:0 0 30px;padding-left:22px;border-left:4px solid var(--cobalt);color:var(--ink)}
+.mani small{display:block;font-family:var(--m);font-weight:400;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin-bottom:8px}
+.ai .mani{color:#fff;border-color:var(--spark)}.tier .mani{display:none}
+.manifesto{padding:clamp(64px,8vw,110px) 0}
+.manifesto .wrap{max-width:900px}
+.manifesto p{font-family:var(--d);font-size:clamp(20px,2.4vw,30px);font-weight:600;letter-spacing:-.02em;line-height:1.35;color:var(--ink);margin-bottom:26px}
+.manifesto p span{color:var(--cobalt)}
+.manifesto .sig{font-family:var(--m);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
 /* NAV */
 nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;height:70px}
@@ -199,9 +207,9 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
     <line x1="700" y1="0" x2="0" y2="900"/><line x1="700" y1="0" x2="1400" y2="900"/><line x1="700" y1="0" x2="350" y2="900"/><line x1="700" y1="0" x2="1050" y2="900"/><line x1="700" y1="0" x2="700" y2="900"/>
   </svg>
   <div class="wrap">
-    <div class="eb">Content platforms under your brand</div>
-    <h1>One core.<br><span>Every screen.</span><br>Your brand.</h1>
-    <p class="lead">Vertice delivers the app, the player, subscriptions, payments, gamification and artificial intelligence. You bring the content and the audience. Streaming, music or TV, from simple to complex, on the same base.</p>
+    <div class="eb">The Vertice manifesto</div>
+    <h1>The audience is yours.<br><span>So is the platform.</span></h1>
+    <p class="lead">For twenty years, whoever owned an audience handed it to someone else's feed. Vertice takes your public from the social network to your own app: gamified, under your brand, with narrative and technology in the same sentence. Streaming, music or TV, from simple to complex.</p>
     <div class="acts">
       <a href="#contato" class="btn btn-p">Talk about your project</a>
       <a href="#modos" class="btn btn-g">See operating modes</a>
@@ -220,11 +228,21 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
   <span>Vertical microdramas</span><span>Series and catalog</span><span>Music and artists</span><span>Linear TV + on demand</span><span>Courses and communities</span>
 </div></div>
 
+<section class="manifesto">
+  <div class="wrap">
+    <p>Technology companies became content platforms. They kept the audience, the algorithm and the revenue. <span>They never learned to tell a story.</span></p>
+    <p>Vertical drama flipped the game: for the first time, narrative and product are the same thing. The hook is the script and the paywall. The coin is the emotion and the revenue. <span>Those who know how to tell stories now know how to build the machine.</span></p>
+    <p>Artificial intelligence finished the job. What once took a thousand engineers is now within reach of anyone with a good writer and an audience. <span>This is the comeback of those who always knew how to tell stories.</span></p>
+    <p>Vertice exists for this comeback. From the social network to your app. From borrowed attention to revenue of your own. <span>Technology in service of narrative, not the other way around.</span></p>
+    <div class="sig">Vertice AI Stream · Manifesto</div>
+  </div>
+</section>
+
 <section class="why">
   <div class="wrap">
     <div>
       <div class="eb">Why Vertice exists</div>
-      <h2>If you own the audience, you shouldn't depend on someone else's platform.</h2>
+      <h2>You built the audience. The feed kept it.</h2>
     </div>
     <div>
       <p>Buying an audience from scratch costs a fortune: the big microdrama apps make hundreds of millions and still lose money on ads. Meanwhile, those who already have an audience (media groups, telcos, brands, artists, producers) stay locked into commissions, algorithms and rules they don't control. Vertice equips audience owners with a platform of their own: ready, branded and profitable.</p>
@@ -235,6 +253,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 
 <section id="quem" class="who">
   <div class="wrap">
+    <div class="mani rv"><small>Manifesto · 1</small>Not for those who want to buy an audience. For those who already have one and want to stop renting it.</div>
     <div class="eb">Who it's for</div>
     <h2>Built for those who already have an audience and want revenue of their own.</h2>
     <div class="who-g">
@@ -250,6 +269,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 
 <section id="camadas">
   <div class="wrap">
+    <div class="mani rv"><small>Manifesto · 2</small>Technology without narrative is an empty shell. Narrative without technology is content for someone else's feed.</div>
     <div class="eb">The platform</div>
     <h2>One core. Every layer.</h2>
     <p class="lead">Not an app plus a list of vendors. The whole product, run by a single team, from video to billing.</p>
@@ -267,6 +287,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 <section id="ia" class="ai">
   <div class="wrap">
     <div>
+      <div class="mani rv"><small>Manifesto · 3</small>AI gave the machine back to the storytellers.</div>
       <div class="eb">Artificial intelligence</div>
       <h2>The "AI" in the name works on every screen.</h2>
       <p class="lead">Not a chatbot bolted onto the app. It's the intelligence that decides what to show, in which language, whom to charge and when to bring them back.</p>
@@ -297,6 +318,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 
 <section id="modos">
   <div class="wrap">
+    <div class="mani rv"><small>Manifesto · 4</small>From simple to complex. Always yours: your brand, your data, your revenue.</div>
     <div class="eb">Operating modes</div>
     <h2>From the simplest operation to the most complex, on the same base.</h2>
     <p class="lead">Start at the step that makes sense today and move up without changing platform or partner.</p>
@@ -310,6 +332,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 
 <section id="porque" class="edge">
   <div class="wrap">
+    <div class="mani rv"><small>Manifesto · 5</small>Twenty years inside the carriers. Twenty years telling stories. Nobody else has both.</div>
     <div class="eb">Why Vertice</div>
     <h2>What Vertice brings that nobody else brings together.</h2>
     <div class="eg">
@@ -355,7 +378,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 <section id="contato" class="cta">
   <div class="wrap">
     <div class="eb">Let's talk</div>
-    <h2>Tell us what you have. Vertice shows what can be done.</h2>
+    <h2>Leave the rented feed. Bring your audience home.</h2>
     <p>A catalog, an audience, an idea or a whole operation: in one conversation we come back with scope, recommended step and launch path.</p>
     <a href="mailto:contato@vertice.ai" class="btn btn-p">Book a conversation</a>
   </div>
